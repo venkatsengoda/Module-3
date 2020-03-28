@@ -77,8 +77,9 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n")
     print(election_results, end="")
     # Save the final vote count to the text file.
-    txt_file.write(county_votes)
     txt_file.write(election_results)
+    txt_file.write(county_votes)
+    
     
    # Print the candidate vote dictionary..
     print(candidate_votes)
@@ -107,9 +108,7 @@ with open(file_to_save, "w") as txt_file:
 
         # Print each candidate's voter count and percentage to the terminal.
         print(candidate_results)
-       
-         # Print each candidate's voter count and percentage to the terminal.
-        print(candidate_results)
+              
         #  Save the candidate results to our text file.
         txt_file.write(candidate_results)
         # Determine winning vote count and candidate
